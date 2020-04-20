@@ -106,7 +106,7 @@ Check out my LinkedIn to learn more.
 - it
 - hooks
 
-### EX - Mocha
+### Student EX - Mocha
 
 - Test one of the API of the REST server you created in the previous EX.
 - Make sure you can run your tests with Visual Studio Code while placing breakpoints for debugging your test.
@@ -123,3 +123,4 @@ Check out my LinkedIn to learn more.
 - Passport
 - JWT
 
+### 
