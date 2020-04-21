@@ -123,4 +123,33 @@ Check out my LinkedIn to learn more.
 - Passport
 - JWT
 
-### 
+### Student EX. JWT authentication - 1 hour
+
+- Your REST api should be JWT protected
+- You can only query your REST api if you have the following header:
+
+```
+{
+    Authorization: Bearer jwt-token
+}
+```
+- The JWT token should be obtained from a login screen.
+
+### Working with Relational Database
+
+- What is relational database
+- What is ORM
+- Sequelize Introduction
+- DB Relations
+- Validations
+- Migrations
+- Seeds
+- Creating REST server
+- About GraphQL
+- Creating a GraphQL Server
+
+### Working with Mongo
+
+- What is mongo
+- What is mongoose
+- db, collection, document
