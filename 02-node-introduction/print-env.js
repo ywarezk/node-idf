@@ -7,6 +7,6 @@
 // {'database_url': 'some string'}
 // ['database_url', ]
 
-for(const key of Object.keys(process.env)) {
+for(const key in process.env) {
     console.log(process.env[key]);
 }
