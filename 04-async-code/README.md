@@ -16,6 +16,9 @@ how to write your own async module.
 - another time is called multiple times
 |----+----+----+--+-----+---+---+---
 
+
+|----------------------------
+
 ### Tools to deal with async code
 
 1 - Promise
