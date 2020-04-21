@@ -51,3 +51,10 @@ npm install lodash --save
 ```
 
 install and place in node_modules
+
+```
+npm publish
+```
+
+### how does node works with module
+
