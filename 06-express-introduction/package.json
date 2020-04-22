@@ -1,0 +1,21 @@
+{
+  "name": "06-express-introduction",
+  "version": "1.0.0",
+  "description": "### What is Express.js",
+  "main": "our-first-express-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/material": "^9.2.1",
+    "express": "^4.17.1",
+    "forever": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "typescript": "^3.8.3"
+  }
+}
