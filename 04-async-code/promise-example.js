@@ -55,3 +55,7 @@ async function dealWithTimer() {
     
     return message.length;
 }
+
+dealWithTimer().then((msgLength) => {
+
+});

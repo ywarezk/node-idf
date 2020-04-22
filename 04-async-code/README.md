@@ -24,3 +24,7 @@ how to write your own async module.
 1 - Promise
 2 - Callback
 3 - Event Emitter
+
+### Bonus RXJS lecture
+
+https://youtu.be/rLPW1VowY1E
