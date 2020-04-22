@@ -24,3 +24,10 @@ req.on('error', (e) => {
   console.error(e);
 });
 req.end();
+
+// /**
+//  * @returns {Promise<string>}
+//  */
+// module.exports = function fetch(url) {
+  
+// }
