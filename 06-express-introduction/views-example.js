@@ -4,6 +4,8 @@
 
 // (function(module, exports, require, __dirname, __filename) {
 
+// npm install @types/express --save-dev
+// import express, { Application, Request } from 'express';
 
 
 const express = require('express');
@@ -38,3 +40,5 @@ app.listen(3000, function() {
 })
 
 // })()
+
+// const stamPromise = Promise.resolve('hello world');
