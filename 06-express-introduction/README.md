@@ -78,3 +78,15 @@ users = [
 ```
 - request of GET /api/users
 - res.json()
+
+### Video
+
+This lecture is also available in video in the following url:
+
+https://youtu.be/I0REjv7kapY
+
+### Router
+
+What is a Router
+Router is another modular object that contain middleware
+
