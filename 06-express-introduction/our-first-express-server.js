@@ -24,7 +24,7 @@ app.use('/admin', adminApp);
 // authentication
 app.get('/', function(req, res, next) {
     // res.status(201).send('hello');
-    next()
+    next();
 });
 
 app.all(['/', '/admin'], function(req, res, next) {

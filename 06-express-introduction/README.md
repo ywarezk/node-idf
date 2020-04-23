@@ -63,3 +63,18 @@ Middleware can do **one** of the following:
 request ---> mid1 ---> mid2 ---> mid3 --> ...
                          |
                     Response
+
+### EX
+
+- class **UserService**
+- Singleton
+
+```
+users = [
+       {id: 1, firstName: 'Yariv', lastName: 'Katz'},
+       {id: 1, firstName: 'Pigletshvili', lastName: 'Chaitovsky'},
+       {id: 1, firstName: 'Sweetness', lastName: 'no last name'}
+]
+```
+- request of GET /api/users
+- res.json()
