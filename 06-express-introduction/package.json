@@ -12,7 +12,8 @@
   "dependencies": {
     "@angular/material": "^9.2.1",
     "express": "^4.17.1",
-    "forever": "^2.0.0"
+    "forever": "^2.0.0",
+    "hbs": "^4.1.1"
   },
   "devDependencies": {
     "mocha": "^7.1.1",

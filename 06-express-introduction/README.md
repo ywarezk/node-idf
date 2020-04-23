@@ -90,3 +90,43 @@ https://youtu.be/I0REjv7kapY
 What is a Router
 Router is another modular object that contain middleware
 
+### Views
+
+How to we return a response of html
+
+### Yariv help me get things in order
+
+express-generator will create a new express project
+
+#### NPX
+
+node package executer
+the job of npx is to execute stuff you install from npm
+
+node_modules/.bin/hello
+
+cd foo
+
+../node_modules/.bin/hello
+
+npx will look in the closest node_modules
+
+npx hello
+
+npx execute local package or community package
+
+
+### EX - your first REST express server
+
+- using **express-generator** you will create a new express project.
+- use the previous **UserService**
+- add the following methods to that service
+  - createUser(user) => push the user to the array {firstName: 'hello', lastName: 'world'}
+  - deleteUser(id) => delete a user from the users array
+  - updateUser(user) => {id:1, firstName: 'sdfasd'}
+- your express server should support the following urls:
+  - /api/users => for GET request return all the users, you should return status 200
+  - /api/users => for POST request generate a new user, the post request should contain in the body the new user details to create, you should return the user and also status 201
+  - /api/users/:id - for get request return the user with that id and also a status of 200
+  - /api/users/:id - for delete request, delete a user from the array, status code 204
+  - /api/users/:id - put will edit the user with :id, in the body the client will send the fields he want to update, you return the user you updated and status 202
