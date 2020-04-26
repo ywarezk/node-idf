@@ -45,7 +45,7 @@ describe('Users REST API', function() {
         assert.equal(response.data.length, userService.users.length);
     }); 
 
-    it.only('Test we are creating a new user', async function() {
+    it('Test we are creating a new user', async function() {
         const response = await axios.post('http://localhost:3000/api/users/', {
             firstName: 'hello',
             lastName: 'world'
@@ -54,4 +54,18 @@ describe('Users REST API', function() {
         assert.equal(response.data.firstName, 'hello');
         assert.equal(userService.users.length, 4);
     });
+
+    it('testing delete', async function() {
+        const response = await axios.delete('http://localhost:3000/api/users/1/');
+        assert.equal(response.status, 204);
+        assert.equal(userService.users.length, 3);
+    });
+
+    it('testing the put', async function() {
+        const response = await axios.put('http://localhost:3000/api/users/2/', {
+            firstName: 'foo'
+        });
+        assert.equal(response.status, 202);
+        assert.equal(userService.users[0].firstName, 'foo');
+    })
 })
