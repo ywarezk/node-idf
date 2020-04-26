@@ -133,3 +133,49 @@ npx execute local package or community package
   - /api/users/:id - for get request return the user with that id and also a status of 200
   - /api/users/:id - for delete request, delete a user from the array, status code 204
   - /api/users/:id - put will edit the user with :id, in the body the client will send the fields he want to update, you return the user you updated and status 202
+
+### Q&A
+
+- What is app.use?
+
+app.use is another way to add a middleware to your express app.
+
+very similar to:
+app.get
+app.post
+app.all
+app.put
+app.delete
+
+the difference from the other methods is this:
+- app.use will operate on all request methods
+app.all also operates on all request methods.
+- the path param is optional
+app.use([path], callback)
+
+```
+[path] = '/'
+app.use(function(req, res) {
+
+});
+
+// /hello
+// /hello/foo
+// /hello/*
+app.use('/hello', function(req, res) {
+
+})
+```
+
+```
+app.use(logger())
+
+logger() => function(req, res,next) {}
+
+app.use(function(req, res, next) {})
+```
+
+app.use is used to apply a middleware through prefix path (alot of the time is this '/')
+to all the requests that enter
+app.use(logger())
+
