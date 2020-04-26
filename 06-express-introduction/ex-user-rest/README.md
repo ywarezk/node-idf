@@ -26,4 +26,9 @@ mocha does not ship with assertion library
 - chai
 
 
+### unit testing EX
 
+- test either the rest server we created together or the one you created in the previous ex.
+- if continuing the one we did together than write test for PUT and DELETE
+- if you are testing your own server write tests for all the CRUD
+- write and run the tests using mocha, using visual studio code debugger
