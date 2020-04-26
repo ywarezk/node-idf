@@ -65,6 +65,12 @@ class UserService {
         return user;
     }
 
+    /**
+     * 
+     * @param {*} id 
+     * @param {*} user 
+     * @returns {User}
+     */
     updateUser(id, user) {
         const userFound = this.users.find((userFromArray) => {
             return userFromArray.id == id;
@@ -73,6 +79,17 @@ class UserService {
         for (let key of Object.keys(user)) {
             userFound[key] = user[key];
         }
+        return userFound;
+    }
+
+    deleteUser(id) {
+        const index = this.users.findIndex((singleUser) => {
+            return singleUser.id == id;
+        });
+        if (index < 0) {
+            throw new Error('user does not exist');
+        }
+        this.users.splice(index, 1);
     }
 }
 

@@ -24,7 +24,17 @@ usersRouter.route('/')
 
 // /api/users/:id/
 usersRouter.route('/:id/')
-    .put()
-    .delete()
+    .put(function(req, res) {
+        const user = userService.updateUser(req.params.id, req.body);
+        res.status(202).json(user);
+    })
+    .delete(function(req, res) {
+        try {
+            userService.deleteUser(req.params.id);
+            res.status(204);
+        } catch (err) {
+            res.status(404).json({error: err.message})
+        }
+    })
 
 module.exports = usersRouter;
