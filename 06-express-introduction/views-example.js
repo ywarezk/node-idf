@@ -26,7 +26,8 @@ app.get('/homepage', (req, res) => {
         user: {
             firstName: 'Yariv',
             lastName: 'Katz'
-        }
+        },
+        hello: 'world'
     })
 });
 

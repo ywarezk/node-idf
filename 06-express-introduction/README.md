@@ -119,6 +119,9 @@ npx execute local package or community package
 ### EX - your first REST express server
 
 - using **express-generator** you will create a new express project.
+```
+> npx express-generator users-rest
+```
 - use the previous **UserService**
 - add the following methods to that service
   - createUser(user) => push the user to the array {firstName: 'hello', lastName: 'world'}
