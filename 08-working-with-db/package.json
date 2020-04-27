@@ -1,0 +1,17 @@
+{
+  "name": "08-working-with-db",
+  "version": "1.0.0",
+  "description": "### Classify db to families",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.9.10",
+    "sequelize": "^5.21.7",
+    "sqlite3": "^4.1.1"
+  }
+}
