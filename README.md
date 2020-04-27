@@ -155,3 +155,7 @@ Check out my LinkedIn to learn more.
 - What is mongo
 - What is mongoose
 - db, collection, document
+
+yariv@nerdeez.com
+
+https://chat.whatsapp.com/EqIl3DtpQG27SAET5NcmtB
