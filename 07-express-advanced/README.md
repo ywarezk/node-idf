@@ -97,8 +97,16 @@ the session data can be stored in different solutions
 
 ### Authentication
 
+Users
+
+id | email | password | firstName | lastName
+
 Authentication
 Authorization
+
+Authentication problem
+requires state full ness
+we need to know in all requests that the user logged in, and who is the user
 
 - Who am I?
 - Am I allowed to?
@@ -119,3 +127,18 @@ What ways do you know that I can authenticate the user?
 
 - session based authentication
 - non session.
+
+### 
+- users table
+- login authentication
+
+We will probably need a middleware creator (passport)
+and somewhere in passport configuration we will need to pass the strategy
+
+
+### Patterns
+
+- middleware creator
+MC will get configuration object
+might get a strategy as well
+Might extend you request
